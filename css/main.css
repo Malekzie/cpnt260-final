@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.logo{
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+}
+
+.navbar{
+  height: 6rem;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop-down .nav-list{
+  padding: 1rem 2rem;
+  background-color: black;
+
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-list a:hover{
+  color: white;
+}
+
+/* Hero Section Styles */
+.hero-wrapper{
+  height: 100vh;
+  background-image: url(../images/hero-dragon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Sets the page to grid */
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hero-title,
+.hero-banner,
+.cta1,
+.cta2{
+  /* Aligns text to be centered inside the grid box */
+  text-align: center;
+  align-self: center;
+}
+
+.hero-title{
+  grid-column: 3;
+  grid-row: 2;
+
+  /* Makes the text pop out more */
+  font-size: 66px;
+  font-weight: 800;
+  
+}
+
+.hero-banner{
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 3;
+  
+  font-size: 33px;
+  font-weight: 800;
+  
+  background-color: #f0ffff75; 
+}
+
+.cta1{
+  box-sizing: border-box;
+  border-radius: 2rem;
+  height: 2rem;
+  
+  grid-row: 5;
+  grid-column: 2;
+
+  background-color: brown;
+  color: yellow;
+}
+
+.cta2{
+  box-sizing: border-box;
+  border-radius: 2rem;
+  height: 2rem;
+
+  grid-row: 5;
+  grid-column: 4;
+
+  background-color: brown;
+  color: yellowgreen;
+}
+
+/* Gallery Styles */
+.gal-wrap{
+  height: 100vh;
+
+}
+
+.habitat-wrap{
+  height: 100vh;
+}
+
+.alma-wrap{
+  height: 100vh;
+}
+
+.contact-wrap{
+  height: 100vh;
+}
+
+.footer{
+  box-sizing: border-box;
+  height: 5rem;
+}
