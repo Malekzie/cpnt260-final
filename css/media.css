@@ -1,0 +1,30 @@
+@media screen and (width < 700px) {
+  /* Nav */
+
+  /* Hero Section */
+  .hero-wrapper{
+    grid-template-columns: 1rem repeat(2, 3fr) 1rem;
+  }
+
+  .hero-title{
+    font-size: 55px;
+  }
+
+  .hero-banner{
+    font-size: 25px;
+  }
+
+  .cta1{
+    height: 3rem;
+    width: 7rem;
+    
+    grid-column: 2;
+  }
+
+  .cta2{
+    height: 3rem;
+    width: 9rem;
+
+    grid-column: 3;
+  }
+}
