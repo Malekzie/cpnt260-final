@@ -7,6 +7,8 @@
 
 /* Second breakpoint */
 @media screen and (width < 700px) {
+  
+
   /* Nav */
   .icons{
     display: inline-flex;

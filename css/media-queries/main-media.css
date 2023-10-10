@@ -3,6 +3,7 @@
   /* Hero Section */
   .hero-wrapper{
     grid-template-columns: 1rem repeat(3, 3fr) 1rem;
+    background-position: left;
   }
 
   .hero-title{
