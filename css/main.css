@@ -11,7 +11,7 @@
   height: 100vh;
   background: url(../images/hero-dragon.jpg) no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 
   /* Sets the page to grid */
   display: grid;
