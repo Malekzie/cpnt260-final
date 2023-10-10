@@ -1,0 +1,207 @@
+/* Gallery Styles */
+
+.gal-title{
+  text-align: center;
+  background-color: rgba(255,255,255, .1);
+  width: 100%;
+}
+.gal-wrap{
+  height: 100%;
+  padding: 2rem;
+
+  background: url(../../images/gallery-backdrop.jpg) no-repeat;
+  background-size: cover, cover;
+  background-position: center center, bottom;
+}
+
+/* Gallery of images */
+
+.gallery{
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 2rem repeat(3, 50vh) 2rem;
+  grid-template-columns: 2rem repeat(3, 30vw) 2rem;
+  gap: 10px;
+}
+
+/* Repetitive Style */
+.gal-item1,
+.gal-item2,
+.gal-item3,
+.gal-item4,
+.gal-item5,
+.gal-item6,
+.gal-item7,
+.gal-item8,
+.gal-item9{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-text{
+  font-size: 22px;
+  font-weight: 800;
+  padding: 10px;
+  color: white;
+}
+
+/* Individual Style */
+
+.gal-item1{
+  grid-area: 2 / 2;
+}
+
+.gal-image1{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/fire-dragon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item2{
+  grid-area: 2 / 3;
+}
+
+.gal-image2{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/water-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item3{
+  grid-area: 2/ 4;
+}
+
+.gal-image3{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/earth-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item4{
+  grid-area: 3/ 2;
+}
+
+.gal-image4{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/wind-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item5{
+  grid-area: 3 / 3;
+}
+
+.gal-image5{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/plant-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item6{
+  grid-area: 3 / 4;
+}
+
+.gal-image6{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/lighting-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item7{
+  grid-area: 4 / 2;
+}
+
+.gal-image7{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/light-dragon.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item8{
+  grid-area: 4 / 3;
+}
+
+.gal-image8{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/dark-dragon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.gal-item9{
+  grid-area: 4 / 4;
+}
+
+.gal-image9{
+  width: 100%;
+  height: 85%;
+
+  background: url(../../images/cosmic-dragon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #ccc;
+}
