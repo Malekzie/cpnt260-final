@@ -11,11 +11,11 @@
   height: 100vh;
   background: url(../images/hero-dragon.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 
   /* Sets the page to grid */
   display: grid;
-  grid-template-rows: 8rem repeat(6,1fr);
+  grid-template-rows: 8rem repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .hero-title{
-  grid-column: 3;
+  grid-column: 2/ span 3;
   grid-row: 2;
 
   /* Makes the text pop out more */
@@ -53,7 +53,7 @@
   border-radius: 2rem;
   height: 2rem;
   
-  grid-row: 5;
+  grid-row: 6;
   grid-column: 2;
 
   background-color: brown;
@@ -65,107 +65,11 @@
   border-radius: 2rem;
   height: 2rem;
 
-  grid-row: 5;
+  grid-row: 6;
   grid-column: 4;
 
   background-color: brown;
   color: yellowgreen;
-}
-
-/* Gallery Styles */
-.gal-wrap{
-  height: 100vh;
-  padding: 2rem;
-
-}
-
-/* Gallery of images */
-.gallery{
-  background: url(../images/gallery-backdrop.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 90%;
-
-  display: grid;
-  grid-template-rows: 2fr 4fr 4fr 4fr 2fr;
-  grid-template-columns: 1.5fr repeat(3, 2fr) 1.5fr;
-  gap: 1rem;
-}
-
-/* Selects the gallery items and applies repetitive styles */
-.gal-item1,
-.gal-item2,
-.gal-item3{
-  grid-row: 2;
-  text-align: center;
-  align-self: flex-end;
-}
-
-.gal-item4,
-.gal-item5,
-.gal-item6{
-  grid-row: 3;
-  text-align: center;
-  align-self: flex-end;
-}
-
-.gal-item7,
-.gal-item8,
-.gal-item9{
-  grid-row: 4;
-  text-align: center;
-  align-self: flex-end;
-}
-/* Selects all gallery images and applies repetitive styles */
-.gal-image1,
-.gal-image2,
-.gal-image3,
-.gal-image4,
-.gal-image5,
-.gal-image6,
-.gal-image7,
-.gal-image8,
-.gal-image9
-{
-  height: 300px;
-  border-radius: 2rem; 
-}
-
-.gal-item1{
-  grid-column: 2;
-  background-image: url(../images/fire-dragon.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-}
-.gal-item2{
-  grid-column: 3;
-}
-
-.gal-item3{
-  grid-column: 4;
-}
-
-.gal-item4{
-  grid-column: 2;
-}
-
-.gal-item5{
-  grid-column: 3;
-}
-.gal-item6{
-  grid-column: 4;
-}
-.gal-item7{
-  grid-column: 2;
-}
-.gal-item8{
-  grid-column: 3;
-}
-.gal-item9{
-  grid-column: 4;
 }
 
 /* Habitat Section Styles */
