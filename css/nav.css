@@ -1,0 +1,42 @@
+/* Navbar Styles */
+
+.head-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+
+  /* Sets the nav wrapper as a flex item */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Z index makes sure the content is on top of everything else */
+  z-index: 100;
+}
+
+/* Targets the logo */
+.logo{
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar .nav-items{
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 2.5rem;
+}
+
+.icons{
+  position: absolute;
+  right: 5%;
+  font-size: 2.7rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
