@@ -1,14 +1,10 @@
 /* Navbar Styles */
-
 .head-wrap{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-
-  background: rgba(0, 0, 0, .1);
-  backdrop-filter: blur(10px);
 
   /* Sets the nav wrapper as a flex item */
   display: flex;
@@ -17,6 +13,36 @@
   
   /* Z index makes sure the content is on top of everything else */
   z-index: 100;
+}
+
+.head-wrap::before{
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: red;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+.head-wrap::after{
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.4));
+  transition: .5s;
+}
+.head-wrap:hover::after{
+  left: 100%;
 }
 
 /* Targets the logo */
@@ -32,11 +58,16 @@
   margin-left: 2.5rem;
 }
 
+/* Mobile Nav Elements set to disappear when it is desktop version */
 .icons{
   position: absolute;
   right: 5%;
   font-size: 2.7rem;
   color: #fff;
   cursor: pointer;
+  display: none;
+}
+
+#check{
   display: none;
 }
