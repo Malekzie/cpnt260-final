@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/typography.css">
-  <link rel="stylesheet" href="css/media.css">      
+  <link rel="stylesheet" href="css/media-queries/main-media.css">"
+  <link rel="stylesheet" href="css/media-queries/nav-media.css">      
   <!-- Pages -->
 
   <!-- Google Fonts -->
@@ -23,9 +24,12 @@
   <header class="head-wrap">
     <a href="#"><img class="logo" src="images/logo.jpg" alt="Dragon Logo"></a>
 
-    <label for="" class="icons">
-      <i class='bx bx-menu'></i>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-x' id="close-icon"></i>
     </label>
+
     <nav class="navbar" >
       <a href="#" class="nav-items">Plan a Trip</a>
       <a href="#" class="nav-items">Dragons</a>
@@ -44,7 +48,7 @@
   </div>
 
   <!-- Gallery of Dragon Photos -->
-  <!-- <div class="gal-wrap">
+  <div class="gal-wrap">
     <ul id="dragons" class="gallery">
       <li class="gal-item1">
         <div class="gal-image1"></div>
@@ -83,7 +87,7 @@
         <a href="#">Lorem, ipsum.</a>
       </li>
     </ul>
-  </div> -->
+  </div>
 
   <!-- Habitats -->
   <!-- <div class="habitat-wrap">
