@@ -1,0 +1,20 @@
+.nav-items{
+  font-family: 'Merriweather', serif;
+}
+
+.hero-title{
+  font-family: 'Ubuntu', serif;
+  color: #fff;
+  background: rgba(0,0,0,.3);
+  border-radius: 2rem;
+}
+
+.cta1,
+.cta2{
+  font-family: 'Ubuntu', serif;
+  font-weight: 500;
+}
+
+.gal-title{
+  color: #fff;
+}
