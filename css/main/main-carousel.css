@@ -86,6 +86,14 @@
 /* Applying Images to each carousel and a gradient based on the dragon */
 :root{
   --dr-bg-grad1: linear-gradient(90deg,#8a060a,#e9aa38, #d23f09);
+  --dr-bg-grad2: linear-gradient(90deg, #044169,#bae3cb,#139083);
+  --dr-bg-grad3: linear-gradient(90deg, #3493a6, #043843, #b4dbcb);
+  --dr-bg-grad4: linear-gradient(90deg, #bfc4ae, #3a9d99, #279497) ;
+  --dr-bg-grad5: linear-gradient(90deg, #216744,  #eb9580, #bff5eb);
+  --dr-bg-grad6: linear-gradient(90deg, #ecfdff, #517583, #78b5c2);
+  --dr-bg-grad7: linear-gradient(90deg, #a3d2d7, #8fdada, #986b5a);
+  --dr-bg-grad8: linear-gradient(90deg, #11475c, #122e43, #4cb7b8 );
+  --dr-bg-grad9: linear-gradient(90deg, #de75cf, #159bbf, #a3948d);
 }
 .dragon-name{
   background-clip: border-box;
