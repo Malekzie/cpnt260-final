@@ -5,21 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dragon Sanctuary</title>
   <!-- JavaScript -->
-  <link rel="stylesheet" href="js/client.js">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/typography.css">
-  <link rel="stylesheet" href="css/main-gallery.css">
+  <script src="js/main-almanac.js" type="module" defer></script>
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/main/nav.css">
+  <link rel="stylesheet" href="css/main/main.css">
+  <link rel="stylesheet" href="css/main/typography.css">
+  <link rel="stylesheet" href="css/main/gallery.css">
+  <link rel="stylesheet" href="css/main/main-carousel.css">
+
+  <!-- Media Queries Stylesheets -->
   <link rel="stylesheet" href="css/media-queries/gallery-media.css">
   <link rel="stylesheet" href="css/media-queries/main-media.css">"
   <link rel="stylesheet" href="css/media-queries/nav-media.css">      
-  <!-- Pages -->
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap" rel="stylesheet">
   <!-- Misc -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -37,8 +39,7 @@
     <nav class="navbar" >
       <a href="#" class="nav-items">Plan a Trip</a>
       <a href="#dragons" class="nav-items">Dragons</a>
-      <a href="#" class="nav-items">Dragon Facts</a>
-      <a href="#" class="nav-items">Habitats</a>
+      <a href="#" class="nav-items">Dragon Almanac</a>   
       <a href="#" class="nav-items">Support Us</a>
     </nav>
   </header>
@@ -46,7 +47,7 @@
   <!-- Hero Section -->
   <div class="hero-wrapper">
     <h1 class="hero-title">Welcome to the Dragons Sanctuary</h1>
-    <p class="hero-banner">Every Dragon was saved from a fatal injury and is unable to return back to the wild. As they are recuperating, you have the chance to gaze at their majesty and regality! Don't miss the chance. </p>
+    <p class="hero-banner"> These Wild and Eldritch beasts have been taken down as trophies and are encased in an enclosure riddled with runes to prevent them from damaging you or escape! Witness their Regality and Glory now!</p>
       <a class="cta1" href="#dragons">Browse our Dragons</a></>
       <a class="cta2" href="#">Fun Facts about them</a></div>
   </div>
@@ -96,16 +97,74 @@
   </div>
 
   <!-- Dragon Almanac Section -->
-  <!-- <div class="almanac-wrap">
-    <ul class="almanac">
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-      <li class="alma-items"><a href="#">Lorem, ipsum.</a></li>
-    </ul>
-  </div> -->
+  <div class="almanac-wrap">
+    <div class="alma-carousel">
+      <div class="carousel-item wrap1">
+        <h2 class="dragon-name">Infernum</h2>
+        <div class="drag-img1">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi ex ipsam iste rem ab hic beatae voluptas consequuntur veritatis amet quia, dolore similique quaerat, repellat voluptatem, incidunt quod earum.<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap2">
+        <h2 class="dragon-name">Sprite</h2>
+        <div class="drag-img2">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap3">
+        <h2 class="dragon-name">Anthracite</h2>
+        <div class="drag-img3">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap4">
+        <h2 class="dragon-name">Tempest</h2>
+        <div class="drag-img4">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap5">
+        <h2 class="dragon-name">Gaia</h2>
+        <div class="drag-img5">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap6">
+        <h2 class="dragon-name">Voltmaw</h2>
+        <div class="drag-img6">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+      
+      <div class="carousel-item wrap7">
+        <h2 class="dragon-name">Incindus</h2>
+        <div class="drag-img7">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap8">
+        <h2 class="dragon-name">Mehthusala</h2>
+        <div class="drag-img8">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+
+      <div class="carousel-item wrap9">
+        <h2 class="dragon-name">Starlight</h2>
+        <div class="drag-img9">
+          <p class="small-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio provident quos iste voluptate ipsum sit, impedit, voluptatum nesciunt ratione beatae accusamus ab. Animi ipsam reprehenderit quidem itaque fugit placeat nesciunt!<button class="button see-more" href="dragon-almanac.html">See More</button></p>
+        </div>
+      </div>
+      <button class="button prev-button"><i class='bx bx-left-arrow-alt'></i></button>
+      <button class="button next-button"><i class='bx bx-right-arrow-alt' ></i></button>
+    </div>
+  </div>
 
   <!-- Contact section -->
   <!-- <div class="contacts-wrap">
