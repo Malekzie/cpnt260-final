@@ -4,18 +4,20 @@
 
 .hero-title{
   font-family: 'Ubuntu', serif;
-  color: #fff;
-  background: rgba(0,0,0,.3);
-  border-radius: 2rem;
+  font-size: clamp(44px, 55px, 66px);
+  font-weight: 800;
 }
 .hero-banner{
-  color: #fff;
-  background: rgba(0,0,0,.3);
+  font-family: 'Ubuntu', serif;
+  font-size: clamp(15px, 33px, 44px);
+  font-weight: 400;
 }
 .cta1,
 .cta2{
   font-family: 'Ubuntu', serif;
   font-weight: 500;
+
+  font-size: clamp(10px, 15px 30px) ;
 }
 
 .gal-title{
