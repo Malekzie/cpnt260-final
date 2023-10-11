@@ -1,4 +1,5 @@
 .alma-carousel {
+  padding: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,13 +10,15 @@
 
 .carousel-item {
   display: none;
+  height: 100vh;
   padding: 20px;
+
   text-align: center;
+
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  flex-grow: 1;
 }
 
 .carousel-item:first-child {
@@ -23,16 +26,18 @@
   transform: translateX(0);
 }
 
-.dragon-name {
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-
 .small-desc {
   padding: 10px;
   margin-top: 10px;
   border-top: 1px solid #ddd;
   overflow-y: auto;
+
+  display: table-cell;
+  height: 100vh;
+  vertical-align: middle;
+  padding: 5rem 2rem;
+  color: white;
+  font-weight: 500;
 }
 
 .see-more {
@@ -43,29 +48,33 @@
 }
 
 .button {
-  background-color: #0074cc;
-  color: #fff;
-  border: none;
   padding: 10px 20px;
   margin-top: 10px;
-  cursor: pointer;
-  border-radius: 5px;
   font-size: 1.5rem;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0074cc;
+  color: #fff;
+  cursor: pointer;
 }
 
 .prev-button,
 .next-button {
   position: absolute;
+  padding: 10px 20px;
+  top: 50%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+
+  border: none;
+  border-radius: 5px;
+
   background-color: #0074cc;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 10px;
   cursor: pointer;
   z-index: 1;
-  top: 50%;
-  border-radius: 5px;
-  font-size: 1.5rem;
 }
 
 .prev-button {
@@ -95,11 +104,10 @@
   --dr-bg-grad8: linear-gradient(90deg, #11475c, #122e43, #4cb7b8 );
   --dr-bg-grad9: linear-gradient(90deg, #de75cf, #159bbf, #a3948d);
 }
-.dragon-name{
-  background-clip: border-box;
-}
+
+/* Infernum Dragon Style */
 .wrap1{
-  background: linear-gradient(90deg,#8a060a,#e9aa38, #d23f09);
+  background: var(--dr-bg-grad1);
 }
 
 .drag-img1 {
@@ -109,19 +117,29 @@
   background-size: cover;
 }
 
-.wrap2{
-  background: linear-gradient(90deg, #044169,#bae3cb,#139083);
+.dragon-name1{
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
+/* Sprite Dragon Style */
+.wrap2{
+  background: var(--dr-bg-grad2);
+}
 .drag-img2{
   background: url(../../images/water-dragon.jpg) no-repeat;
   height: 100%;
   background-position: top;
   background-size: cover;
 }
+.dragon-name2{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 
+/* Anthracite Dragon Style */
 .wrap3{
-  background: linear-gradient(90deg, #3493a6, #043843, #b4dbcb);
+  background: var(--dr-bg-grad3);
 }
 
 .drag-img3{
@@ -130,9 +148,14 @@
   background-position: top;
   background-size: cover;
 }
+.dragon-name3{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 
+/* Tempest Dragon Style */
 .wrap4{
-  background: linear-gradient(90deg, #bfc4ae, #3a9d99, #279497) ;
+  background: var(--dr-bg-grad4);
 }
 
 .drag-img4{
@@ -141,9 +164,14 @@
   background-position: center;
   background-size: cover;
 }
+.dragon-name4{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 
+/* Gaia Dragon Style */
 .wrap5{
-  background: linear-gradient(90deg, #216744,  #eb9580, #bff5eb);
+  background: var(--dr-bg-grad5);
 }
 
 .drag-img5{
@@ -152,11 +180,19 @@
   background-position: top;
   background-size: cover;
 }
-
-.wrap6{
-  background: linear-gradient(90deg, #ecfdff, #517583, #78b5c2);
+.dragon-name5{
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
+/* Voltmaw Dragon Style */
+.wrap6{
+  background: var(--dr-bg-grad6);
+}
+.dragon-name6{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 .drag-img6{
   background: url(../../images/lighting-dragon.jpg) no-repeat;
   height: 100%;
@@ -164,10 +200,15 @@
   background-size: cover;
 }
 
+/* Incindus Dragon Style */
 .wrap7{
-  background: linear-gradient(90deg, #a3d2d7, #8fdada, #986b5a);
+  background: var(--dr-bg-grad7);
 }
 
+.dragon-name7{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 .drag-img7{
   background: url(../../images/light-dragon.jpg) no-repeat;
   height: 100%;
@@ -175,10 +216,14 @@
   background-size: cover;
 }
 
+/* Mehthusala Dragon Style */
 .wrap8{
-  background: linear-gradient(90deg, #11475c, #122e43, #4cb7b8 );
+  background: var(--dr-bg-grad8);
 }
-
+.dragon-name8{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 .drag-img8{
   background: url(../../images/dark-dragon.jpg) no-repeat;
   height: 100%;
@@ -186,9 +231,13 @@
   background-size: cover;
 }
 
-
+/* Starlight Dragon Style */
+.dragon-name9{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 .wrap9{
-  background: linear-gradient(90deg, #de75cf, #159bbf, #a3948d);
+  background: var(--dr-bg-grad9);
 }
 
 .drag-img9{
