@@ -83,12 +83,26 @@
   background-color: #00589f;
 }
 
-/* Applying Images to each carousel */
+/* Applying Images to each carousel and a gradient based on the dragon */
+:root{
+  --dr-bg-grad1: linear-gradient(90deg,#8a060a,#e9aa38, #d23f09);
+}
+.dragon-name{
+  background-clip: border-box;
+}
+.wrap1{
+  background: linear-gradient(90deg,#8a060a,#e9aa38, #d23f09);
+}
+
 .drag-img1 {
   background: url(../../images/fire-dragon.jpg) no-repeat;
   height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.wrap2{
+  background: linear-gradient(90deg, #044169,#bae3cb,#139083);
 }
 
 .drag-img2{
@@ -98,11 +112,19 @@
   background-size: cover;
 }
 
+.wrap3{
+  background: linear-gradient(90deg, #3493a6, #043843, #b4dbcb);
+}
+
 .drag-img3{
   background: url(../../images/earth-dragon.jpg) no-repeat;
   height: 100%;
   background-position: top;
   background-size: cover;
+}
+
+.wrap4{
+  background: linear-gradient(90deg, #bfc4ae, #3a9d99, #279497) ;
 }
 
 .drag-img4{
@@ -112,11 +134,19 @@
   background-size: cover;
 }
 
+.wrap5{
+  background: linear-gradient(90deg, #216744,  #eb9580, #bff5eb);
+}
+
 .drag-img5{
   background: url(../../images/plant-dragon.jpg) no-repeat;
   height: 100%;
   background-position: top;
   background-size: cover;
+}
+
+.wrap6{
+  background: linear-gradient(90deg, #ecfdff, #517583, #78b5c2);
 }
 
 .drag-img6{
@@ -126,6 +156,10 @@
   background-size: cover;
 }
 
+.wrap7{
+  background: linear-gradient(90deg, #a3d2d7, #8fdada, #986b5a);
+}
+
 .drag-img7{
   background: url(../../images/light-dragon.jpg) no-repeat;
   height: 100%;
@@ -133,11 +167,20 @@
   background-size: cover;
 }
 
+.wrap8{
+  background: linear-gradient(90deg, #11475c, #122e43, #4cb7b8 );
+}
+
 .drag-img8{
   background: url(../../images/dark-dragon.jpg) no-repeat;
   height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+
+.wrap9{
+  background: linear-gradient(90deg, #de75cf, #159bbf, #a3948d);
 }
 
 .drag-img9{
