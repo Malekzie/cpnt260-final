@@ -1,0 +1,148 @@
+.alma-carousel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.carousel-item:first-child {
+  display: block;
+  transform: translateX(0);
+}
+
+.dragon-name {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.small-desc {
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.see-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  background-color: #0074cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  background-color: #0074cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 1;
+  top: 50%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.prev-button {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #00589f;
+}
+
+/* Applying Images to each carousel */
+.drag-img1 {
+  background: url(../../images/fire-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.drag-img2{
+  background: url(../../images/water-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: top;
+  background-size: cover;
+}
+
+.drag-img3{
+  background: url(../../images/earth-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: top;
+  background-size: cover;
+}
+
+.drag-img4{
+  background: url(../../images/wind-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.drag-img5{
+  background: url(../../images/plant-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: top;
+  background-size: cover;
+}
+
+.drag-img6{
+  background: url(../../images/lighting-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.drag-img7{
+  background: url(../../images/light-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.drag-img8{
+  background: url(../../images/dark-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.drag-img9{
+  background: url(../../images/cosmic-dragon.jpg) no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
