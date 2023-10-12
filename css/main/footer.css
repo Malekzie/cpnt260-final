@@ -5,9 +5,8 @@ footer{
   background-position: center;
 
   display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-columns: 2fr 4fr;
   grid-template-rows: 80% 20%;
-  gap: 2rem;
 }
 
 .contacts h2,
@@ -39,7 +38,7 @@ footer{
 
 .location{
   width: 100%;
-  text-align: center;
+  padding-left: 2rem;
 }
 
 .operation-hours .hours{
