@@ -132,4 +132,8 @@ main{
   border: 1px solid yellow;
   border-radius: 2rem;
   cursor: pointer;
+  transition: .3s ease;
+}
+.buy-it:hover{
+  color: blue;
 }
