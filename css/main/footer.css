@@ -1,6 +1,9 @@
 /* Footer section styles */
 footer{
-  background: url(../../images/);
+  background: url(../../images/gallery-backdrop.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   grid-template-rows: 80% 20%;
@@ -10,19 +13,30 @@ footer{
 .contacts h2,
 .operation-hours h2,
 .location h2{
-  text-align: center;
-  font-size:25px;
-  border-bottom: 1px solid;
   font-family: 'Merriweather', serif;
+  border-bottom: 1px solid;
+
+  color: white;
+  text-align: center;
+
+  font-size:25px;
+  background: rgba(0,0,0,.15);
 }
 
+.contacts-list,
+.hours,
+.copyright{
+  font-family: 'Ubuntu', serif;
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,.3);
+}
 .contacts-list{
   margin-top: 5rem;
   padding: 2rem;
   height: 50%;
-  text-align: center;
-  font-family: 'Ubuntu', serif;
 }
+
 .location{
   width: 100%;
   text-align: center;
@@ -30,11 +44,8 @@ footer{
 
 .operation-hours .hours{
   margin-top: 5rem;
-  text-align: center;
-  font-family: 'Ubuntu', serif;
 }
 .copyright{
-
   grid-column: 1/ span 3;
   width: 100%;
   text-align: center;

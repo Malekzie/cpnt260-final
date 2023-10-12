@@ -1,3 +1,11 @@
+:root{
+  --text-color: #fde4c3;
+  --card-color: #302a18;
+  --card-faded: #302a1875;
+  --second-card: #1c1c1c;
+  --second-text: #f6f6f6;
+}
+
 /* Navbar Styles */
 .head-wrap{
   position: absolute;
@@ -29,6 +37,10 @@
   z-index: -1;
 }
 
+.active{
+  background-color: rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+}
 .head-wrap::after{
   content: '';
   position: absolute;
@@ -53,8 +65,12 @@
 .navbar .nav-items{
   font-size: 1.15rem;
   font-weight: 400;
-  color: #fff;
+  color: var(--card-color);
   margin-left: 2.5rem;
+}
+
+.navbar > .nav-items:hover{
+  color: var(--second-card);
 }
 
 /* Mobile Nav Elements set to disappear when it is desktop version */
