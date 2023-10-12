@@ -4,8 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trip Plan</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main/trip-planner.css">
+  <link rel="stylesheet" href="css/main/nav.css">
+  <link rel="stylesheet" href="css/main/footer.css">
+
+  <!-- Google Fonts -->
+
+  <!-- Misc -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  
+  <header class="head-wrap">
+    <a href="#"><img class="logo" src="images/logo.jpg" alt="Dragon Logo"></a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar" >
+      <a href="#" class="nav-items">Home</a>
+      <a href="#" class="nav-items active">Plan a Trip</a>
+      <a href="#" class="nav-items">Dragon Almanac</a>   
+    </nav>
+  </header>
+  <main>
+    <div class="plan-visit">
+      <div class="banner">
+      <h1 class="banner-title">Plan Your Visit</h1>
+      <p class="banner-paragraph">Immerse yourself in the wild wonders that await at our enchanting sanctuary! A world of majestic dragons beckons, each with a unique story to tell. Embark on a journey where fantasy becomes reality, and every moment is a new adventure. Plan your visit today, and unlock the gate to a realm of mythical marvels like no other.</p>
+      </div>
+      <div class="cta">
+        <button class="cta1">Buy Tickets</button>
+        <button class="cta2">Be a Member</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contacts">
+      <h2>Contact Information</h2>
+        <ul class="contacts-list">
+          <li>Location: 442, Arthurs Lane, Camelot</li>
+          <li>Tel: 543-321-DRAKE</li>
+          <li>Email: MajestyDragons@camelot.cam</li>
+        </ul>
+    </div>
+    <div class="location">
+      <h2>Location</h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8935.484145392684!2d-114.08831729150138!3d51.0635085383529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0xb1db5e68bd61e28!2sSouthern%20Alberta%20Institute%20of%20Technology!5e0!3m2!1sen!2sca!4v1697051883659!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="operation-hours">
+      <h2>HOURS OF OPERATION</h2>
+        <ul class="hours">
+          <p>Monday - Friday 6:00am - 5:00pm</p>
+          <p>Saturday 8:00am - 3:00pm</p>
+          <p>Sunday CLOSED</p>
+        </ul>
+    </div>
+    <div class="copyright">
+      <i class='bx bxs-copyright'> 2023 Dragons Sanctuary. All Rights Reserved.</i>
+    </div>
+
+  </footer>
 </body>
 </html>
