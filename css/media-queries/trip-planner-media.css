@@ -1,0 +1,10 @@
+@media (width < 900px) {
+  .plan-visit{
+    height: 20rem;
+  }
+
+  .tickets{
+    display: flex;
+    flex-direction: column;
+  }
+}

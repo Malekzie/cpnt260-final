@@ -55,8 +55,8 @@
   grid-row: 6;
   grid-column: 2;
 
-  background-color: brown;
-  color: yellow;
+  background: rgba(0,0,0,.3);
+  color: white;
 }
 
 .cta2{
@@ -70,28 +70,6 @@
   grid-row: 6;
   grid-column: 4;
 
-  background-color: brown;
-  color: yellowgreen;
-}
-
-/* Habitat Section Styles */
-.habitat-wrap{
-  height: 100vh;
-}
-
-/* Dragon Almanac Styles */
-.alma-wrap{
-  height: 100vh;
-}
-
-/* Contact Section styles */
-.contact-wrap{
-  height: 100vh;
-}
-
-
-/* Footer section styles */
-.footer{
-  box-sizing: border-box;
-  height: 5rem;
+  background: rgba(0,0,0,.3);
+  color: white;
 }

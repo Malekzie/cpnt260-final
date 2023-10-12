@@ -10,26 +10,11 @@ body{
   background-size: cover;
   background-position: center;
 }
-
+/* Prevents content from going behind navbar */
 .wrapper{
   margin-top: 7.5rem;
 }
 
-.nav-items .active{
-  color: red;
-}
-
-.dragon-names-wrap{
-  display: grid;
-  grid-template-rows: 7rem repeat(9, 4rem);
-  grid-template-columns: 20% 75%;
-  text-align: center;
-  box-sizing: border-box;
-  
-  font-size: 22px;
-  font-weight: 200;
-  font-family: 'Ubuntu', serif;
-}
 
 .site-name{
   font-family: 'Merriweather', serif;
@@ -41,27 +26,25 @@ body{
 
 .dragon-push{
   cursor: pointer;
-  width: 100%;
-  height: 100%;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   color: white;
   background: rgba(0, 0, 0, 0.3);
 }
 
-
 .dragons{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 25vh 15vh 35vh;
+
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100vh;
 }
 
 .dragon-name{
+  font-family: 'Merriweather', serif;
   grid-column: 1/ span 3;
-  align-self: center;
+  text-align: center;
 
   font-size: 55px;
   color: #0E5814;
@@ -70,85 +53,44 @@ body{
 .element,
 .habitat,
 .age{
+  font-family: 'Ubuntu', serif;
   font-weight: 800;
+  text-align: center;
   color: black;
-  background: rgba(255,255,255,0.1)
+  border:1px solid black;
+  background: rgba(255,255,255,0.1);
 }
 
 .text{
   grid-column: 1/ span 3;
-  align-self: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid black;
+  font-size: 27px;
+  line-height: 2rem;
   font-weight: 900;
+  background: rgba(255,255,255,0.1);
 }
 
-
-/* Placements inside the grid */
-
-.infernum{
-  grid-row: 2;
-  grid-column: 1;
-  border: 1px solid black;
-
+/* Sidenav */
+.sidebar {
+  margin-top:0;
+  padding: 0;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position :absolute;
+  height: 100%;
+  overflow: auto;
 }
 
-.infernum:hover{
-  background: linear-gradient(var(--dr-bg-grad1));
+.sidebar .dragon-push{
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
 }
 
-.sprite{
-  grid-row: 3;
-  grid-column: 1;
-  border: 1px solid black;
-
-}
-
-.anthracite{
-  grid-row: 4;
-  grid-column: 1;
-  border: 1px solid black;
-
-}
-
-.tempest{
-  grid-row: 5;
-  grid-column: 1;
-  border: 1px solid black;
-
-}
-
-.gaia{
-  grid-row: 6;
-  grid-column: 1;
-  border: 1px solid black;
-
-}
-
-.voltmaw{
-  grid-row: 7;
-  grid-column: 1;
-  border: 1px solid black;
-}
-
-.incindus{
-  grid-row: 8;
-  grid-column: 1;
-  border: 1px solid black;
-
-}
-
-.mehthusala{
-  grid-row: 9;
-  grid-column: 1;
-  border: 1px solid black;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.starlight{
-  grid-row: 10;
-  grid-column: 1;
-  border: 1px solid black;
+.sidebar .dragon-push:hover {
+  background-color: #555;
+  color: white;
 }

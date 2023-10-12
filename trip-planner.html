@@ -10,8 +10,13 @@
   <link rel="stylesheet" href="css/main/nav.css">
   <link rel="stylesheet" href="css/main/footer.css">
 
+  <!-- Media Queries -->
+  <link rel="stylesheet" href="css/media-queries/nav-media.css">
+  <link rel="stylesheet" href="css/media-queries/trip-planner-media.css">
   <!-- Google Fonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap" rel="stylesheet">
   <!-- Misc -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -26,7 +31,7 @@
     </label>
 
     <nav class="navbar" >
-      <a href="#" class="nav-items">Home</a>
+      <a href="index.html" class="nav-items">Home</a>
       <a href="#" class="nav-items active">Plan a Trip</a>
       <a href="dragon-almanac.html" class="nav-items">Dragon Almanac</a>   
     </nav>
@@ -38,8 +43,7 @@
       <p class="banner-paragraph">Immerse yourself in the wild wonders that await at our enchanting sanctuary! A world of majestic dragons beckons, each with a unique story to tell. Embark on a journey where fantasy becomes reality, and every moment is a new adventure. Plan your visit today, and unlock the gate to a realm of mythical marvels like no other.</p>
       </div>
       <div class="cta">
-        <button class="cta1">Buy Tickets</button>
-        <button class="cta2">Be a Member</button>
+        <button class="cta1" href="#ticks">Buy Tickets</button>
       </div>
     </div>
 
@@ -49,7 +53,7 @@
       <h3>Don't wait until they're gone!</h3>
     </div>
 
-    <div class="tickets">
+    <div class="tickets" id="ticks">
       <div class="tick-child">
         <div class="tick-content">
           <h3>Child (Age 3-15)</h3>

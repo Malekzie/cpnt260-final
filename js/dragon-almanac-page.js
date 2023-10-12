@@ -6,7 +6,7 @@ const infernum =
   element: "Fire",
   habitat: "The Scorching Caldera",
   age: 7258,
-  text: "asda"
+  text: "Infernum's fiery essence was forged in the heart of an erupting volcano, born from molten lava that blazed into existence. He claims the Scorching Caldera as his eternal home, a desolate and blazing landscape where the earth itself is aflame. Infernum's personality reflects his fierce independence and untamed spirit, known for his passionate and intense nature, which embodies the relentless power of the inferno."
 }
 
 const sprite = 
@@ -15,7 +15,7 @@ const sprite =
   element: "Water",
   habitat: "The Azure Depths",
   age: 8574,
-  text: "Asda"
+  text: "Sprite emerged in the depths of the ocean, nurtured by the crystalline waters of the Azure Depths, where she now dwells, guarding the mysteries of the deep. Her serene and wise demeanor carries the ancient knowledge of the seas, and she is a symbol of tranquility and protection in the aquatic realm."
 }
 const anthracite=
 {
@@ -23,7 +23,7 @@ const anthracite=
   element: "Earth",
   habitat: "The Stonewrought Caverns",
   age: 7769,
-  text: "Qwert"
+  text: "Anthracite's stony form came to life in the depths of the Stonewrought Caverns, where the core of the earth gave birth to his enduring strength. He finds his habitat within the underground labyrinth of caverns, a realm of geological wonders. Anthracite's stoic and unyielding nature represents the unwavering power of the earth, making him a guardian of the subterranean world."
 } 
 const tempest = 
 {
@@ -31,7 +31,7 @@ const tempest =
   element: "Water",
   habitat: "The Cyclone's Roost",
   age: 6701,
-  text: "Weert"
+  text: "Tempest's ethereal form was born amidst the howling winds of the Cyclone's Roost, where the air sculpted his existence. He soars through the skies, commanding the winds and guiding storms with his mastery of the air. Tempest's free-spirited and unpredictable personality embodies the ever-changing nature of the wind, making him a force of nature and a symbol of boundless freedom."
 }
 const gaia = 
 {
@@ -39,7 +39,7 @@ const gaia =
   element: "Plant",
   habitat: "The Verdant Haven",
   age: 8412,
-  text: "werty"
+  text: "Gaia's nurturing presence brought the first plants and trees to life in the heart of the Verdant Haven. She resides in the lush and vibrant world of forests and gardens, safeguarding the diversity of plant life. Gaia's gentle and nurturing personality embodies the spirit of growth and renewal, making her a guardian of the botanical world."
 }
 const voltmaw = 
 {
@@ -47,7 +47,7 @@ const voltmaw =
   element: "Lightning",
   habitat: "The Thunderstruck Peaks",
   age: 9983,
-  text: "wewow"
+  text: "Voltmaw's existence is entwined with the Thunderstruck Peaks, where the raw power of lightning and thunder brought him to life. He roams the electrified peaks, commanding the elemental forces and channeling the energy of lightning. Voltmaw's electrifying and dynamic personality represents the raw power of electricity, and he is a guardian of the high-altitude domains."
 }
 const incindus = 
 {
@@ -55,7 +55,7 @@ const incindus =
   element: "Light",
   habitat: "The Radiant Glade",
   age: 7206,
-  text: "weerests"
+  text: "Incindus was born from the radiant energies of the Radiant Glade, where light and life coexist in harmony. He illuminates the cosmic expanses, radiating light and warmth as a celestial guardian. Incindus's radiant and benevolent personality embodies the essence of illumination and hope, making him a symbol of enlightenment and positivity."
 }
 const mehthusala = 
 {
@@ -63,7 +63,7 @@ const mehthusala =
   element: "Dark",
   habitat: "The Abyssal Void",
   age: "Unknown",
-  text: "ASdawasas"
+  text: "Methusala's existence is shrouded in the Abyssal Void, a place of eternal darkness where he came into being. He is imprisoned within the void, awaiting a day of reckoning, his presence representing the enduring shadow. Methusala's enigmatic and foreboding personality embodies the darkness and mystery of the abyss, making him a being of eternal darkness and uncertainty."
 }
 const starlight = 
 {
@@ -71,10 +71,13 @@ const starlight =
   element: "Star",
   habitat: "The Celestial Expanse",
   age: "Unknown",
-  text: "Asdawdas"
+  text: "Starlight's origins are a cosmic mystery, transcending time and space. He roams the Celestial Expanse, where the constellations themselves bow to his will. Starlight's mysterious and enchanting personality remains neutral and enigmatic, his intentions hidden in the depths of the cosmos. As an ever-watchful guardian of the cosmic realms, he embodies the wonders of the universe, making him a being of celestial beauty and cosmic enigma."
 }
 
-// Runs the function when the ID gets clicked
+dragonArray.push(starlight, mehthusala, incindus, voltmaw, gaia, tempest, anthracite, sprite, infernum);
+
+console.log(dragonArray);
+
 document.getElementById("Infernum").addEventListener("click", function(){
   const target = this.id;
   getSome(dragonArray, target);
@@ -97,29 +100,30 @@ document.getElementById("Tempest").addEventListener("click", function(){
 
 document.getElementById("Gaia").addEventListener("click", function(){
   const target = this.id;
-  
   getSome(dragonArray, target);
 })
 
 document.getElementById("Voltmaw").addEventListener("click", function(){
   const target = this.id;
-  
   getSome(dragonArray, target);
 })
 
 document.getElementById("Incindus").addEventListener("click", function(){
   const target = this.id;
-  
   getSome(dragonArray, target);
 })
 
 document.getElementById("Mehthusala").addEventListener("click", function(){
   const target = this.id;
-  
   getSome(dragonArray, target);
 })
 
-// takes in the array and id as parameters, for each dragon id, their objects gets pushed if the user clicks
+
+document.getElementById("Starlight").addEventListener("click", function(){
+  const target = this.id;
+  getSome(dragonArray, target);
+})
+
 function getSome(arr, id){
   for(let i = 0; i < arr.length-1; i++ ){
       switch(id){
@@ -141,7 +145,7 @@ function getSome(arr, id){
           document.querySelector(".dragon-name").innerHTML = anthracite.name;
           document.querySelector(".element").innerHTML = anthracite.element;
           document.querySelector(".habitat").innerHTML = anthracite.habitat;
-          document.querySelector(".age").innerHTML = sprite.age;
+          document.querySelector(".age").innerHTML = anthracite.age;
           document.querySelector(".text").innerHTML =  anthracite.text;
           break;
         case "Tempest":
@@ -151,7 +155,7 @@ function getSome(arr, id){
           document.querySelector(".age").innerHTML = tempest.age;
           document.querySelector(".text").innerHTML =  tempest.text;
           break;
-        case "Gaia":voltmaw
+        case "Gaia":
           document.querySelector(".dragon-name").innerHTML = gaia.name;
           document.querySelector(".element").innerHTML = gaia.element;
           document.querySelector(".habitat").innerHTML = gaia.habitat;
@@ -186,12 +190,6 @@ function getSome(arr, id){
           document.querySelector(".age").innerHTML = starlight.age;
           document.querySelector(".text").innerHTML =  starlight.text;
         break;
-        default:
-          document.querySelector(".dragon-name").innerHTML = infernum.name;
-          document.querySelector(".element").innerHTML = infernum.element;
-          document.querySelector(".habitat").innerHTML = infernum.habitat;
-          document.querySelector(".age").innerHTML = infernum.age;
-          document.querySelector(".text").innerHTML =  infernum.text;
       }
   }
 }

@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root{
+  --texts-color: rgb(214, 140, 56);
+  --bg-color: rgba(0, 0, 0, 0.25);
+}
+
+body{
+  background: url(../../images/plan-trip-second.jpg) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+main{
+  margin-top: 7.9em;
+  height: 100%;
+}
+
+.plan-visit{
+  background: url(../../images/plan-trip-first.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  width: 100%;
+}
+.banner-title{
+  margin-bottom: 10px;
+  font-size: clamp(22px, 35px);
+  padding: 2rem;
+  color: white;
+  font-weight: 900;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.banner-paragraph{
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+
+  font-size: clamp(15px, 22px);
+  color: var(--texts-color);
+  font-weight: 800;
+  background: rgba(0,0,0,0.25);
+}
+
+.cta{
+  display: inline;
+  padding-left: 2rem;
+}
+
+.cta1{
+  margin-right: 5rem;
+  width: 10rem;
+  height: 1.5rem;
+
+  color: white;
+  border-radius: 2rem;
+  background-color: rgba(0,0,0,0.20);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.cta1:hover{
+  color: red;
+}
+
+
+.topping{
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.20);
+}
+
+.topping p,
+.topping, h1{
+  margin-bottom: 1.5rem;
+}
+
+.topping p,
+.topping h1,
+.topping h3{
+  color: var(--texts-color);
+}
+
+.tickets{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 40%;
+}
+
+.tick-child,
+.tick-adult,
+.tick-senior{
+  background: rgba(0,0,0,0.20);
+  height: 15rem;
+  width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tick-child h3,
+.tick-adult h3,
+.tick-senior h3,
+.tick-child h2,
+.tick-adult h2,
+.tick-senior h2{
+  margin: 3rem 0;
+  color: white;
+}
+
+.tick-content{
+  background: rgba(255,255,255,0.25);
+  width: 80%;
+}
+.lowered{
+  font-size: 20px;
+}
+.buy-it{
+  width: 7rem;
+  height: 2rem;
+
+  background-color: red;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 2rem;
+  cursor: pointer;
+}

@@ -1,4 +1,4 @@
-@media screen and (width < 700px) {
+@media screen and (width < 900px) {
 
   /* Hero Section */
   .hero-wrapper{
@@ -15,7 +15,7 @@
     font-size: 25px;
   }
 
-  .cta1{
+  .cta-wrap .cta1{
     height: 3rem;
     width: 9rem;
     
@@ -23,7 +23,7 @@
 
   }
 
-  .cta2{
+  .cta-wrap .cta2{
     height: 3rem;
     width: 9rem;
 
