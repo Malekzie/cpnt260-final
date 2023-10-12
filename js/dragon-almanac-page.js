@@ -74,6 +74,7 @@ const starlight =
   text: "Asdawdas"
 }
 
+// Runs the function when the ID gets clicked
 document.getElementById("Infernum").addEventListener("click", function(){
   const target = this.id;
   getSome(dragonArray, target);
@@ -118,7 +119,7 @@ document.getElementById("Mehthusala").addEventListener("click", function(){
   getSome(dragonArray, target);
 })
 
-
+// takes in the array and id as parameters, for each dragon id, their objects gets pushed if the user clicks
 function getSome(arr, id){
   for(let i = 0; i < arr.length-1; i++ ){
       switch(id){
