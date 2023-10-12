@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.wrapper{
+  margin-top: 7.5rem;
+}
+
+.dragon-names-wrap{
+  display: grid;
+  grid-template-rows: 7rem repeat(9, 4rem);
+  grid-template-columns: 20% 75%;
+  text-align: center;
+  box-sizing: border-box;
+  
+  font-size: 22px;
+  font-weight: 200;
+  font-family: 'Ubuntu', serif;
+}
+
+.dragons-names-wrap h1{
+  font-family: 'Merriweather', serif;
+  border: 1px solid black;
+}
+
+.dragon-push{
+  cursor: pointer;
+}
+
+.dragons{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 35vh 15vh 50vh;
+  border: 1px solid black;
+  height: 89vh;
+}
+
+.dragon-name{
+  grid-column: 1/ span 3;
+  align-self: center;
+}
+
+.text{
+  grid-column: 1/ span 3;
+  align-self: center;
+}
+
+
+/* Placements inside the grid */
+
+.infernum{
+  grid-row: 2;
+  grid-column: 1;
+  border: 1px solid black;
+  gap: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sprite{
+  grid-row: 3;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.anthracite{
+  grid-row: 4;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tempest{
+  grid-row: 5;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gaia{
+  grid-row: 6;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.voltmaw{
+  grid-row: 7;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.incindus{
+  grid-row: 8;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mehthusala{
+  grid-row: 9;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.starlight{
+  grid-row: 10;
+  grid-column: 1;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
